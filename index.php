@@ -17,7 +17,7 @@ if (isset($_POST['newRef']) and isset($_SESSION['ref_login'])) {
 }
 ?>
 <div class="container my-3">
-    <script>document.title='Code Referance'</script>;
+    <script>document.title='Code Referance'</script>
     <h3>All Referances</h3>
     <center>
         <?php
