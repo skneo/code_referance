@@ -9,6 +9,8 @@ if (isset($_POST['newRef']) and isset($_SESSION['ref_login'])) {
                 </div>";
 } else if (isset($_POST['editRef']) and isset($_SESSION['ref_login'])) {
     $editRef = $_POST['editRef'];
+    $refData=file_get_contents('ref/' . $editRef . '.txt');
+    file_put_contents('ref-old/' . $editRef . '.txt', $refData);
     $refData = $_POST['refData'];
     file_put_contents('ref/' . $editRef . '.txt', $refData);
     echo "<div class='alert alert-success' role='alert'>
