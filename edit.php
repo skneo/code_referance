@@ -13,7 +13,7 @@ if (isset($_GET['editRef'])) {
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <button onclick="history.back()" class="btn btn-primary btn-sm mb-2">&larr; Back</button>
     <h3>Edit Referance Data of <?php echo strtoupper($editRef) ?></h3>
-    <form method='POST' action='index.php'>
+    <form method='POST' action=<?php echo "view.php?ref=$editRef" ?>>
         <div class='mb-3'>
             <label for='refData' class='form-label '>Referance data</label><br>
             <textarea class="form-control" name="refData" id="refData" cols="30" rows="5"><?php echo $refData ?></textarea>
