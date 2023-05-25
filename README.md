@@ -1,2 +1,2 @@
 # code_referance
-save important piece of code for future referance
+coding notes - save important piece of code for future referance
